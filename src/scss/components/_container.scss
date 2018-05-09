@@ -1,0 +1,11 @@
+/*stylelint-disable*/
+
+.container {
+  width: 1440px;
+  height: 900px;
+  background-color: grey;
+  @include flex-box(column, flex-start, center);
+  position: relative;
+  overflow: hidden;
+}
+

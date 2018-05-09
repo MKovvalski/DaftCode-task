@@ -1,0 +1,74 @@
+/*stylelint-disable*/
+
+.main-header {
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 45px;
+  @include flex-box(row, space-between, center);
+}
+
+.header {
+  width: 220px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.nav-list {
+  height: 44px;
+  text-transform: uppercase;
+  @include flex-box(row, center, center);
+  font-family: $Open-sans-regular;
+}
+
+.nav-element {
+  height: 45px;
+  margin-right: 56px;
+  padding-right: 6px;
+  line-height: 48px;
+  vertical-align: middle;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: $color-third;
+    top:100%;
+    left:0;
+    transition: $transition;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-link {
+  font-size: 17px;
+  color: $color-third;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-button {
+  width: 150px;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  color: $color-third;
+  text-transform: uppercase;
+  border: 3px solid $color-third;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: $transition;
+  &:hover {
+    background-color: $color-third;
+    color: $color-second;
+  }
+}
+
+.burger-button {
+  display: none;
+}

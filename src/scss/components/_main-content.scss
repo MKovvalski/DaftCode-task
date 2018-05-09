@@ -1,0 +1,55 @@
+/*stylelint-disable*/
+
+.main-content {
+  margin-top: 150px;
+  width: 550px;
+  @include flex-box(column, center, center);
+}
+
+.content-main-text {
+  font-size: 34px;
+  font-weight: 500;
+  color: $color-first;
+  text-align: center;
+  font-family: $Raleway-extra-light;
+  span {
+    color: $color-third;
+    font-weight: 600;
+  }
+}
+
+.image-wrapper {
+  border: 2px solid red;
+  width: 105px;
+  height: 105px;
+  margin-top: 122px;
+  margin-bottom: 130px;
+  object-fit: cover;
+}
+
+.content-main-sub-text {
+  color: $color-third;
+  font-size: 18px;
+  text-align: center;
+  font-family: $Raleway-semi-bold;
+}
+
+.contact-list {
+  width: 90%;
+  margin-top: 10px;
+  @include flex-box(row, space-between, center);
+}
+
+.contact-element {
+  span {
+    color: $color-third;
+    text-transform: uppercase;
+    font-family: $Open-sans-regular;
+  }
+}
+
+.contact-element-link {
+  text-decoration: none;
+}
+
+

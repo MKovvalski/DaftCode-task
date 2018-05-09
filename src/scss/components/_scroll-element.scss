@@ -1,0 +1,22 @@
+/*stylelint-disable*/
+
+.bottom-button {
+  width: 89px;
+  height: 89px;
+  background-color: $color-third;
+  border: none;
+  position: absolute;
+  border-radius: 5px;
+  top: 95.5%;
+  transform: rotate(45deg);
+}
+
+.bottom-button-text {
+  position: absolute;
+  color: $color-second;
+  font-size: 13px;
+  text-transform: uppercase;
+  top: 19%;
+  right: 52%;
+  transform: rotate(-45deg);
+}
