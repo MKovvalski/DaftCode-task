@@ -1,0 +1,76 @@
+/*stylelint-disable*/
+
+.main-content {
+  @include respond-to(mobile) {
+    margin-top: 37px;
+    width: 69%;
+
+  }
+}
+
+.content-main-text {
+  @include respond-to(mobile) {
+    color: $color-third;
+    width: 100%;
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+.line-break {
+  @include respond-to(mobile) {
+    display: block;
+  }
+}
+
+.image-wrapper {
+  @include respond-to(mobile) {
+    width: 67px;
+    height: 67px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.content-main-sub-text {
+  @include respond-to(mobile) {
+    font-size: 10px;
+    margin-top: 21px;
+    line-height: 19px;
+  }
+}
+
+.contact-list {
+  @include respond-to(mobile) {
+    margin-top: 29px;
+    @include flex-box(column, center, space-between);
+  }
+}
+
+.contact-element {
+  @include respond-to(mobile) {
+    margin-bottom: 29px;
+    margin-left: 6px;
+    @include flex-box(row, center, center);
+  }
+}
+
+.contact-element-link {
+  @include respond-to(mobile) {
+    font-size: 12px;
+    @include flex-box(row, center, center);
+  }
+}
+
+.contact-element-icon {
+  @include respond-to(mobile) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.contact-element-text {
+  @include respond-to(mobile) {
+    margin-left: 9px;
+  }
+}

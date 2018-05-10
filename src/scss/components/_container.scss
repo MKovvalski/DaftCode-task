@@ -1,11 +1,17 @@
 /*stylelint-disable*/
 
 .container {
-  width: 1440px;
-  height: 900px;
-  background-color: grey;
+  width: 320px;
+  height: 530px;
   @include flex-box(column, flex-start, center);
   position: relative;
   overflow: hidden;
 }
 
+.test-image {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 320px;
+  height: 530px;
+}

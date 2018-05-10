@@ -2,19 +2,26 @@
 
 .main-header {
   width: 100%;
-  padding-left: 80px;
+  padding-left: 78px;
   padding-right: 80px;
-  margin-top: 45px;
+  margin-top: 26px;
   @include flex-box(row, space-between, center);
 }
 
 .header {
-  width: 220px;
-  height: 60px;
+  margin-top: 28px;
+  width: 214px;
+  height: 58px;
   object-fit: cover;
+  z-index: 1;
+}
+
+.main-nav {
+  z-index: 1;
 }
 
 .nav-list {
+  z-index: 1;
   height: 44px;
   text-transform: uppercase;
   @include flex-box(row, center, center);
@@ -22,9 +29,9 @@
 }
 
 .nav-element {
-  height: 45px;
-  margin-right: 56px;
-  padding-right: 6px;
+  height: 44px;
+  margin-right: 47.8px;
+  padding-right: 8px;
   line-height: 48px;
   vertical-align: middle;
   position: relative;
@@ -46,17 +53,21 @@
 }
 
 .nav-link {
-  font-size: 17px;
+  font-size: 16px;
   color: $color-third;
   font-weight: 600;
   text-decoration: none;
 }
 
 .contact-button {
-  width: 150px;
-  height: 50px;
-  font-size: 17px;
+  font-family: $Open-sans-regular;
+  width: 146px;
+  height: 45px;
+  font-size: 16px;
   font-weight: 600;
+  padding-left: 0;
+  margin-left: 5px;
+  margin-top: 2px;
   color: $color-third;
   text-transform: uppercase;
   border: 3px solid $color-third;

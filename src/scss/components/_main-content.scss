@@ -1,13 +1,16 @@
 /*stylelint-disable*/
 
 .main-content {
-  margin-top: 150px;
-  width: 550px;
+  margin-top: 118px;
+  width: 580px;
   @include flex-box(column, center, center);
+  z-index: 1;
 }
 
 .content-main-text {
-  font-size: 34px;
+  width: 95.5%;
+  line-height: 44px;
+  font-size: 36px;
   font-weight: 500;
   color: $color-first;
   text-align: center;
@@ -18,12 +21,16 @@
   }
 }
 
+.line-break {
+  display: none;
+}
+
 .image-wrapper {
-  border: 2px solid red;
+  border: 0.5px solid red;
   width: 105px;
   height: 105px;
-  margin-top: 122px;
-  margin-bottom: 130px;
+  margin-top: 116px;
+  margin-bottom: 124px;
   object-fit: cover;
 }
 
@@ -31,21 +38,28 @@
   color: $color-third;
   font-size: 18px;
   text-align: center;
-  font-family: $Raleway-semi-bold;
+  font-family: $Open-sans-regular;
 }
 
 .contact-list {
   width: 90%;
-  margin-top: 10px;
+  margin-top: 13px;
   @include flex-box(row, space-between, center);
 }
 
 .contact-element {
+  width: 135px;
   span {
     color: $color-third;
     text-transform: uppercase;
     font-family: $Open-sans-regular;
   }
+}
+
+.contact-element-icon {
+  width: 70px;
+  height: 70px;
+  margin-right: 5px;
 }
 
 .contact-element-link {

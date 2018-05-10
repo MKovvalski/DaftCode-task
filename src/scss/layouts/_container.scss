@@ -1,0 +1,8 @@
+/*stylelint-disable*/
+
+.container {
+  @include respond-to(mobile) {
+    width: 100vw;
+    height: 100vh;
+  }
+}

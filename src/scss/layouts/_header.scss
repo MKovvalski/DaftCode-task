@@ -1,0 +1,43 @@
+/*stylelint-disable*/
+
+.main-header {
+  @include respond-to(mobile) {
+    margin-top: 0;
+    padding: 0;
+    @include flex-box(row, center, center);
+    position: relative;
+  }
+}
+.header {
+  @include respond-to(mobile) {
+    width: 109px;
+    height: 100%;
+    margin-top: 22px;
+    z-index: 3;
+  }
+}
+
+.nav-list {
+  @include respond-to(mobile) {
+    overflow: hidden;
+    display: none;
+  }
+}
+
+.burger-button {
+  @include respond-to(mobile) {
+    position: absolute;
+    display: block;
+    top: 25%;
+    right: 4.7%;
+    z-index: 400000;
+  }
+}
+
+.burger-button-img {
+  @include respond-to(mobile) {
+    width: 28px;
+    height: 34px;
+  }
+}
+

@@ -6,10 +6,13 @@
 @import "scss/helpers/mixins.scss";
 
 //components
-@import "scss/layouts/main-page.scss";
-
-//layouts
 @import "scss/components/container.scss";
 @import "scss/components/header.scss";
 @import "scss/components/main-content.scss";
 @import "scss/components/scroll-element.scss";
+
+//layouts
+@import "scss/layouts/container.scss";
+@import "scss/layouts/header.scss";
+@import "scss/layouts/main-content.scss";
+@import "scss/layouts/scroll-element.scss";

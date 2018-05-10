@@ -23,7 +23,7 @@ module.exports = {
     new styleLintPlugin({
       configFile: '.stylelintrc',
       context: '',
-      files: '**/*.scss',
+      files: '*/.scss',
       syntax: 'scss',
       failOnError: false,
       quiet: false
@@ -41,15 +41,16 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            'postcss-loader',
-            'sass-loader'
-          ]
-        })
-      }
+        loader: "style-loader!css-loader?url=false!sass-loader"
+      },
+      { test: /\.svg$/, loader: 'svg-loader?pngScale=2' },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
+        }
+      },
     ]
   },
 
