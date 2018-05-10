@@ -2,7 +2,7 @@
 
 .main-content {
   @include respond-to(mobile) {
-    margin-top: 37px;
+    margin-top: 46px;
     width: 69%;
 
   }
@@ -12,8 +12,8 @@
   @include respond-to(mobile) {
     color: $color-third;
     width: 100%;
-    font-size: 19px;
-    line-height: 23px;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 
@@ -25,31 +25,32 @@
 
 .image-wrapper {
   @include respond-to(mobile) {
-    width: 67px;
-    height: 67px;
-    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+    margin-top: 27px;
     margin-bottom: 0;
   }
 }
 
 .content-main-sub-text {
   @include respond-to(mobile) {
-    font-size: 10px;
-    margin-top: 21px;
-    line-height: 19px;
+    font-size: 14px;
+    margin-top: 28px;
+    line-height: 23px;
+    letter-spacing: -1px;
   }
 }
 
 .contact-list {
   @include respond-to(mobile) {
-    margin-top: 29px;
+    margin-top: 40px;
     @include flex-box(column, center, space-between);
   }
 }
 
 .contact-element {
   @include respond-to(mobile) {
-    margin-bottom: 29px;
+    margin-bottom: 37px;
     margin-left: 6px;
     @include flex-box(row, center, center);
   }
@@ -57,20 +58,20 @@
 
 .contact-element-link {
   @include respond-to(mobile) {
-    font-size: 12px;
+    font-size: 14px;
     @include flex-box(row, center, center);
   }
 }
 
 .contact-element-icon {
   @include respond-to(mobile) {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
 }
 
 .contact-element-text {
   @include respond-to(mobile) {
-    margin-left: 9px;
+    margin-left: 11px;
   }
 }

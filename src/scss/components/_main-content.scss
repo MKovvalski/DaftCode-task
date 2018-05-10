@@ -43,12 +43,13 @@
 
 .contact-list {
   width: 90%;
-  margin-top: 13px;
+  margin-top: 22px;
   @include flex-box(row, space-between, center);
 }
 
 .contact-element {
-  width: 135px;
+  //border: 0.5px solid red;
+  @include flex-box(row, center, center);
   span {
     color: $color-third;
     text-transform: uppercase;
@@ -57,13 +58,26 @@
 }
 
 .contact-element-icon {
-  width: 70px;
-  height: 70px;
+  width: 23px;
+  height: 25px;
   margin-right: 5px;
 }
 
 .contact-element-link {
   text-decoration: none;
+  @include flex-box(row, center, center);
+}
+
+.contact-element-text {
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.contact-element-icon-google {
+  width: 29px;
+  height: 29px;
+  margin-top: 2px;
+  margin-right: 3px;
 }
 
 

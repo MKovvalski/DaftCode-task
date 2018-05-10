@@ -10,9 +10,9 @@
 }
 .header {
   @include respond-to(mobile) {
-    width: 109px;
+    width: 132px;
     height: 100%;
-    margin-top: 22px;
+    margin-top: 28px;
     z-index: 3;
   }
 }
@@ -28,7 +28,7 @@
   @include respond-to(mobile) {
     position: absolute;
     display: block;
-    top: 25%;
+    top: 33%;
     right: 4.7%;
     z-index: 400000;
   }
@@ -36,7 +36,7 @@
 
 .burger-button-img {
   @include respond-to(mobile) {
-    width: 28px;
+    width: 35px;
     height: 34px;
   }
 }
