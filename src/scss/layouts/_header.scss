@@ -2,6 +2,7 @@
 
 .main-header {
   @include respond-to(mobile) {
+    height: 14%;
     margin-top: 0;
     padding: 0;
     @include flex-box(row, center, center);
@@ -10,9 +11,9 @@
 }
 .header {
   @include respond-to(mobile) {
-    width: 132px;
-    height: 100%;
-    margin-top: 28px;
+    margin: 0;
+    height: 30px;
+    width: 35%;
     z-index: 3;
   }
 }
@@ -26,18 +27,18 @@
 
 .burger-button {
   @include respond-to(mobile) {
+    width: 9%;
     position: absolute;
     display: block;
-    top: 33%;
-    right: 4.7%;
+    top: 31%;
+    right: 7.1%;
     z-index: 400000;
-  }
-}
-
-.burger-button-img {
-  @include respond-to(mobile) {
-    width: 35px;
-    height: 34px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    &:focus {
+      outline: none;
+    }
   }
 }
 

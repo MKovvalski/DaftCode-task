@@ -4,5 +4,7 @@
   @include respond-to(mobile) {
     width: 100vw;
     height: 100vh;
+    background-image: url("../../../images/320x530.png");
+    background-size: cover;
   }
 }

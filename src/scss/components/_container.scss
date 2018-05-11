@@ -1,23 +1,29 @@
 /*stylelint-disable*/
 
+html {
+  @include respond-to(mobile) {
+    font-size: 18px;
+  }
+  @include respond-to(tablet) {
+    font-size: 16px;
+  }
+  @include respond-to(desktop) {
+    font-size: 20px;
+  }
+
+}
+
 .container {
   width: 1440px;
   height: 900px;
-  background-image: url("../../../images/jpg-files/bg_image.jpg");
+  background:   linear-gradient(
+      rgba(0, 24, 32, 0.2),
+      rgba(0, 24, 32, 0.2)
+  ),url("../../../images/jpg-files/bg_image.jpg");
   background-repeat: no-repeat;
   background-size: 180% 190%;
   background-position: 68% 34%;
   @include flex-box(column, flex-start, center);
   position: relative;
   overflow: hidden;
-}
-
-.test-image {
-  width: 1440px;
-  height: 900px;
-  z-index: 10;
-  opacity: 0.5;
-  position: absolute;
-  top:0;
-  left: 0;
 }

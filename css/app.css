@@ -340,7 +340,6 @@ input[type=button] {
     font-weight: 600; }
 
 .image-wrapper {
-  border: 2px solid red;
   width: 105px;
   height: 105px;
   margin-top: 122px;

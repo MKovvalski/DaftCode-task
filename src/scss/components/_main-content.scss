@@ -25,8 +25,7 @@
   display: none;
 }
 
-.image-wrapper {
-  border: 0.5px solid red;
+.circle-square-image {
   width: 105px;
   height: 105px;
   margin-top: 116px;
@@ -48,7 +47,6 @@
 }
 
 .contact-element {
-  //border: 0.5px solid red;
   @include flex-box(row, center, center);
   span {
     color: $color-third;
@@ -78,6 +76,16 @@
   height: 29px;
   margin-top: 2px;
   margin-right: 3px;
+}
+
+.rotate {
+  animation: rotate 0.5s linear 1 forwards;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 
