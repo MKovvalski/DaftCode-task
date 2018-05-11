@@ -24,6 +24,5 @@ html {
   background-size: 180% 190%;
   background-position: 68% 34%;
   @include flex-box(column, flex-start, center);
-  position: relative;
   overflow: hidden;
 }

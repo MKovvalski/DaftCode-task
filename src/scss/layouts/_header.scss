@@ -6,7 +6,6 @@
     margin-top: 0;
     padding: 0;
     @include flex-box(row, center, center);
-    position: relative;
   }
 }
 .header {
@@ -18,27 +17,115 @@
   }
 }
 
+.main-nav {
+  @include respond-to(mobile) {
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top:0;
+    background-color: $color-second;
+    margin-top: 0 !important;
+    background-size: cover;
+    @include flex-box(column, flex-start, center);
+  }
+}
+
 .nav-list {
   @include respond-to(mobile) {
+    width: 100%;
+    height: 53%;
+    margin-top: 34.5%;
     overflow: hidden;
-    display: none;
+    @include flex-box(column, flex-start, center);
+  }
+}
+
+.nav-element {
+  @include respond-to(mobile) {
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 15.7%;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.nav-list-icons {
+  width: 64%;
+  margin-top: 15%;
+  overflow: hidden;
+  @include respond-to(mobile) {
+    @include flex-box(row, space-between, center)
+  }
+}
+
+.contact-button {
+  @include respond-to(mobile) {
+    margin-top: 4%;
+    margin-left: 1px;
+    height: 40px;
+    width: 204px;
+    &:hover {
+      background-color: transparent;
+      color: $color-first;
+    }
+  }
+}
+
+.nav-icon {
+  @include respond-to(mobile) {
+    width: 8vw;
+    height: 8vw;
+    @include flex-box(row, center, center);
   }
 }
 
 .burger-button {
   @include respond-to(mobile) {
-    width: 9%;
+    width: 8vw;
     position: absolute;
     display: block;
-    top: 31%;
-    right: 7.1%;
-    z-index: 400000;
+    top: 4.3vh;
+    right: 7.2vw;
+    z-index: 3;
     padding: 0;
     background-color: transparent;
     border: none;
     &:focus {
       outline: none;
     }
+  }
+}
+
+// classes for animations
+
+.slide-down {
+  @include respond-to(mobile) {
+    animation: slide-down 0.3s linear 1 forwards;
+  }
+}
+
+.slide-up {
+  @include respond-to(mobile) {
+    animation: slide-up 0.3s linear 1 forwards;
+  }
+}
+
+// animations for mobile nav
+
+@keyframes slide-down {
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
   }
 }
 

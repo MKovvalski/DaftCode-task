@@ -13,19 +13,17 @@
   width: 214px;
   height: 58px;
   object-fit: cover;
-  z-index: 1;
-}
-
-.main-nav {
-  z-index: 1;
 }
 
 .nav-list {
-  z-index: 1;
   height: 44px;
   text-transform: uppercase;
   @include flex-box(row, center, center);
   font-family: $Open-sans-regular;
+}
+
+.nav-list-icons {
+  display: none;
 }
 
 .nav-element {
@@ -77,6 +75,9 @@
   &:hover {
     background-color: $color-third;
     color: $color-first;
+  }
+  &:focus {
+    outline: none;
   }
 }
 

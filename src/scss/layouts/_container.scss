@@ -4,7 +4,12 @@
   @include respond-to(mobile) {
     width: 100vw;
     height: 100vh;
-    background-image: url("../../../images/320x530.png");
-    background-size: cover;
+    background:   linear-gradient(
+        rgba(0, 24, 32, 0.2),
+        rgba(0, 24, 32, 0.2)
+    ),url("../../../images/jpg-files/bg_image.jpg");
+    background-repeat: no-repeat;
+    background-size: 384%;
+    background-position: 61% 45%;
   }
 }
