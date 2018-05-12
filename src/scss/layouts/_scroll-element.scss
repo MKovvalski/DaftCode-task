@@ -2,9 +2,9 @@
 
 .bottom-nav-link {
   @include respond-to(mobile) {
-    width: 17%;
-    top: 96.5%;
-    border-radius: 3px;
+    width: 17vw;
+    top: 96.6%;
+    border-radius: 0.8vw;
   }
 }
 
@@ -20,6 +20,6 @@
     z-index: 1;
     top: 5%;
     right: 71%;
-    font-size: 15px;
+    font-size: 4.5vw;
   }
 }

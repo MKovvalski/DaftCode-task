@@ -2,11 +2,11 @@
 
 .bottom-nav-link {
   z-index: 1;
-  width: 94px;
+  width: 6.5%;
   background-color: $color-third;
   position: absolute;
-  border-radius: 5px;
-  top: 95.2%;
+  border-radius: 6%;
+  bottom: -5.7%;
   border: none;
   transform: rotate(45deg);
   font-family: $Open-sans-regular;
@@ -20,7 +20,7 @@
 .bottom-nav-link-text {
   position: absolute;
   color: $color-second;
-  font-size: 14px;
+  font-size: 1.11vw;
   text-transform: uppercase;
   top: 20%;
   right: 49%;

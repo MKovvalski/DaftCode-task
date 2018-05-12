@@ -1,15 +1,15 @@
 /*stylelint-disable*/
 
 .main-content {
-  margin-top: 118px;
-  width: 580px;
+  margin-top: 16.3vh;
+  width: 40.4%;
   @include flex-box(column, center, center);
 }
 
 .content-main-text {
   width: 95.5%;
-  line-height: 44px;
-  font-size: 36px;
+  line-height: 125%;
+  font-size: 2.8vw;
   font-weight: 500;
   color: $color-first;
   text-align: center;
@@ -25,23 +25,24 @@
 }
 
 .circle-square-image {
-  width: 105px;
-  height: 105px;
-  margin-top: 116px;
-  margin-bottom: 124px;
+  width: 8vw;
+  height: 8vw;
+  margin-top: 16.75vh;
   object-fit: cover;
 }
 
 .content-main-sub-text {
+  margin-top: 17.8vh;
   color: $color-third;
-  font-size: 18px;
+  font-size: 1.41vw;
   text-align: center;
   font-family: $Open-sans-regular;
 }
 
 .contact-list {
   width: 90%;
-  margin-top: 22px;
+  max-width: 41vw;
+  margin-top: 2.65vh;
   @include flex-box(row, space-between, center);
 }
 
@@ -55,8 +56,9 @@
 }
 
 .contact-element-icon {
-  width: 23px;
-  margin-right: 5px;
+  width: 1.88vw;
+  margin-top: 0.1vw;
+  margin-right: 0.40vw;
 }
 
 .contact-element-link {
@@ -65,18 +67,13 @@
 }
 
 .contact-element-text {
-  margin-left: 12px;
-  font-size: 16px;
+  margin-left: 0.9vw;
+  font-size: 1.26vw;
 }
 .contact-element-icon-google {
-  width: 29px;
-  margin-top: 2px;
-  margin-right: 3px;
-  &:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
+  width: 2.5vw;
+  margin-top: 0.47vh;
+  margin-right: 0.20vw;
 }
 
 .rotate {

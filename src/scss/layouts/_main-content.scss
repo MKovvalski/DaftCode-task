@@ -2,8 +2,8 @@
 
 .main-content {
   @include respond-to(mobile) {
-    margin-top: 5.5%;
-    width: 69%;
+    margin-top: 3.6vh;
+    width: 69vw;
   }
 }
 
@@ -12,8 +12,14 @@
     color: $color-third;
     width: 100%;
     font-size: 5.8vw;
-    line-height: 23px;
+    line-height: 4.5vh;
     letter-spacing: 0.1px;
+  }
+}
+
+.line-break-desktop {
+  @include respond-to(mobile) {
+    display: none;
   }
 }
 
@@ -25,33 +31,33 @@
 
 .circle-square-image {
   @include respond-to(mobile) {
-    width: 64px;
-    height: 64px;
-    margin-top: 9.5%;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 4.2vh;
     margin-bottom: 0;
   }
 }
 
 .content-main-sub-text {
   @include respond-to(mobile) {
-    font-size: 0.60rem;
-    line-height: 19px;
-    margin-top: 10.30%;
-    letter-spacing: -0.37px;
+    font-size: 3.2vw;
+    line-height: 3.7vh;
+    margin-top: 4vh;
+    letter-spacing: -0.04vw;
   }
 }
 
 .contact-list {
   @include respond-to(mobile) {
-    margin-top: 13.5%;
+    margin-top: 5.6vh;
     @include flex-box(column, center, space-between);
   }
 }
 
 .contact-element {
   @include respond-to(mobile) {
-    margin-bottom: 14.3%;
-    margin-left: 3%;
+    margin-bottom: 5.35vh;
+    margin-left: 1.7vw;
     @include flex-box(row, center, center);
   }
 }
@@ -74,13 +80,13 @@
     width: 5vw;
     height: 5vw;
     margin-top: 0;
-    margin-right: 5px;
+    margin-right: 0.4vw;
   }
 }
 
 .contact-element-text {
   @include respond-to(mobile) {
     font-size: 3.8vw;
-    margin-left: 8px;
+    margin-left: 4vw;
   }
 }

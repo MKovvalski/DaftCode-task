@@ -1,18 +1,5 @@
 /*stylelint-disable*/
 
-html {
-  @include respond-to(mobile) {
-    font-size: 18px;
-  }
-  @include respond-to(tablet) {
-    font-size: 16px;
-  }
-  @include respond-to(desktop) {
-    font-size: 20px;
-  }
-
-}
-
 .container {
   width: 1440px;
   height: 900px;
@@ -23,6 +10,7 @@ html {
   background-repeat: no-repeat;
   background-size: 180% 190%;
   background-position: 68% 34%;
+  //background-image: url("../../../images/1440x900.png");
   @include flex-box(column, flex-start, center);
   overflow: hidden;
 }
