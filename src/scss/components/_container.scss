@@ -6,11 +6,10 @@
   background:   linear-gradient(
       rgba(0, 24, 32, 0.2),
       rgba(0, 24, 32, 0.2)
-  ),url("../../../images/jpg-files/bg_image.jpg");
+  ),url("./images/jpg-files/bg_image.jpg");
   background-repeat: no-repeat;
   background-size: 180% 190%;
   background-position: 68% 34%;
-  //background-image: url("../../../images/1440x900.png");
   @include flex-box(column, flex-start, center);
   overflow: hidden;
 }
