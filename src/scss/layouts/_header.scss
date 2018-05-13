@@ -100,6 +100,7 @@
     line-height: 4.8vw;
     margin-top: 1.4vh;
     margin-left: 0;
+    padding: 0;
     border: 1vw solid $color-third;
     &:hover {
       background-color: transparent;
@@ -114,6 +115,7 @@
     font-size: 1.15vw;
     padding-top: 0;
     padding-left: 0.35vw;
+    min-height: 35px;
   }
 }
 
