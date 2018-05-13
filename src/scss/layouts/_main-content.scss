@@ -6,7 +6,7 @@
     width: 69vw;
   }
   @include respond-to(tablet) {
-    margin-top: 7.98vh;
+    margin-top: 8.1vh;
     width: 51vw;
   }
 }
@@ -20,8 +20,9 @@
     letter-spacing: 0.1px;
   }
   @include respond-to(tablet) {
-    font-size: 2.75vw;
-    letter-spacing: 0.008vw;
+    font-size: 2.7vw;
+    letter-spacing: 0.04vw;
+    line-height: 4.67vh;
   }
 }
 

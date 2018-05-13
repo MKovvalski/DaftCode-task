@@ -8,10 +8,10 @@
     @include flex-box(row, center, center);
   }
   @include respond-to(tablet) {
-    height: 16.2vh;
+    height: 16vh;
     margin-top: 0;
     padding-left: 3.65vw;
-    padding-right: 3.2vw;
+    padding-right: 4.05vw;
   }
 }
 .header {
@@ -22,7 +22,7 @@
     z-index: 3;
   }
   @include respond-to(tablet) {
-    margin-top: 4.2vh;
+    margin-top: 4.4vh;
     width: 17.50%;
   }
 }
@@ -37,9 +37,6 @@
     background-color: $color-second;
     margin-top: 0 !important;
     @include flex-box(column, flex-start, center);
-  }
-  @include respond-to(tablet) {
-    width: 43.25vw;
   }
 }
 
@@ -61,12 +58,19 @@
     margin-bottom: 9.45vh;
     margin-right: 0;
     padding: 0;
+    &:after {
+      content: none;
+    }
   }
   @include respond-to(tablet) {
     line-height: 4vh;
     height: 4.20vh;
     margin-right: 4.13vw;
+    &:after {
+      content: none;
+    }
   }
+
 }
 
 .nav-link {
@@ -96,6 +100,7 @@
     line-height: 4.8vw;
     margin-top: 1.4vh;
     margin-left: 0;
+    border: 1vw solid $color-third;
     &:hover {
       background-color: transparent;
       color: $color-first;
@@ -107,6 +112,7 @@
     margin-top: 0;
     margin-left: 0.1vw;
     font-size: 1.15vw;
+    padding-top: 0;
     padding-left: 0.35vw;
   }
 }
