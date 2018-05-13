@@ -1,15 +1,15 @@
 /*stylelint-disable*/
 
 .main-content {
-  margin-top: 16.3vh;
+  margin-top: 12.95vh;
   width: 40.4%;
   @include flex-box(column, center, center);
 }
 
 .content-main-text {
   width: 95.5%;
-  line-height: 125%;
-  font-size: 2.8vw;
+  line-height: 4.9vh;
+  font-size: 2.48vw;
   font-weight: 500;
   color: $color-first;
   text-align: center;
@@ -25,24 +25,25 @@
 }
 
 .circle-square-image {
-  width: 8vw;
-  height: 8vw;
-  margin-top: 16.75vh;
+  width: 7vw;
+  height: 7vw;
+  margin-top: 13.15vh;
   object-fit: cover;
 }
 
 .content-main-sub-text {
-  margin-top: 17.8vh;
+  margin-top: 14vh;
   color: $color-third;
-  font-size: 1.41vw;
+  font-size: 1.24vw;
   text-align: center;
   font-family: $Open-sans-regular;
+  letter-spacing: 0.0039vw;
 }
 
 .contact-list {
-  width: 90%;
+  width: 89.6%;
   max-width: 41vw;
-  margin-top: 2.65vh;
+  margin-top: 2.4vh;
   @include flex-box(row, space-between, center);
 }
 
@@ -56,8 +57,8 @@
 }
 
 .contact-element-icon {
-  width: 1.88vw;
-  margin-top: 0.1vw;
+  width: 1.70vw;
+  height: 1.70vw;
   margin-right: 0.40vw;
 }
 
@@ -67,13 +68,13 @@
 }
 
 .contact-element-text {
-  margin-left: 0.9vw;
-  font-size: 1.26vw;
+  margin-left: 0.6vw;
+  font-size: 1.12vw;
 }
 .contact-element-icon-google {
-  width: 2.5vw;
-  margin-top: 0.47vh;
-  margin-right: 0.20vw;
+  width: 2.2vw;
+  height: 2.2vw;
+  margin-right: 0.24vw;
 }
 
 .rotate {

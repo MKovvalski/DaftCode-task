@@ -7,6 +7,12 @@
     padding: 0;
     @include flex-box(row, center, center);
   }
+  @include respond-to(tablet) {
+    height: 16.2vh;
+    margin-top: 0;
+    padding-left: 3.65vw;
+    padding-right: 3.2vw;
+  }
 }
 .header {
   @include respond-to(mobile) {
@@ -14,6 +20,10 @@
     height: 5.6vh;
     width: 35%;
     z-index: 3;
+  }
+  @include respond-to(tablet) {
+    margin-top: 4.2vh;
+    width: 17.50%;
   }
 }
 
@@ -28,6 +38,9 @@
     margin-top: 0 !important;
     @include flex-box(column, flex-start, center);
   }
+  @include respond-to(tablet) {
+    width: 43.25vw;
+  }
 }
 
 .nav-list {
@@ -38,6 +51,7 @@
     overflow: hidden;
     @include flex-box(column, flex-start, center);
   }
+
 }
 
 .nav-element {
@@ -48,18 +62,20 @@
     margin-right: 0;
     padding: 0;
   }
+  @include respond-to(tablet) {
+    line-height: 4vh;
+    height: 4.20vh;
+    margin-right: 4.13vw;
+  }
 }
 
 .nav-link {
   @include respond-to(mobile) {
     font-size: 5vw;
   }
-}
-
-.contact-button {
-  @include respond-to(mobile) {
-    font-size: 5vw;
-    line-height: 4.8vw;
+  @include respond-to(tablet) {
+    font-size: 1.1vw;
+    letter-spacing: 0.032vw;
   }
 }
 
@@ -74,14 +90,24 @@
 
 .contact-button {
   @include respond-to(mobile) {
+    width: 63vw;
+    height: 7.7vh;
+    font-size: 5vw;
+    line-height: 4.8vw;
     margin-top: 1.4vh;
     margin-left: 0;
-    height: 7.7vh;
-    width: 63vw;
     &:hover {
       background-color: transparent;
       color: $color-first;
     }
+  }
+  @include respond-to(tablet) {
+    height: 4.6vh;
+    width: 11.3vw;
+    margin-top: 0;
+    margin-left: 0.1vw;
+    font-size: 1.15vw;
+    padding-left: 0.35vw;
   }
 }
 
@@ -104,13 +130,34 @@
     padding: 0;
     background-color: transparent;
     border: none;
-    transition: $transition;
     &:focus {
       outline: none;
     }
   }
 }
 
+.burger-img {
+  left: 0;
+  position: absolute;
+  transition: $transition;
+  opacity: 1;
+}
+
+.x-img {
+  width: 6.8vw;
+  left: 1vw;
+  position: absolute;
+  transition: $transition;
+  opacity: 0;
+}
+
+.x-img-opacity {
+  opacity: 1;
+}
+
+.burger-img-opacity {
+  opacity: 0;
+}
 // classes for animations
 
 .slide-down {

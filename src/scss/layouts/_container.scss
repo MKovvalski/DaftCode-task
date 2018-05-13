@@ -2,14 +2,9 @@
 
 .container {
   @include respond-to(mobile) {
-    width: 100vw;
-    height: 100vh;
-    background:   linear-gradient(
-        rgba(0, 24, 32, 0.2),
-        rgba(0, 24, 32, 0.2)
-    ),url("./images/jpg-files/bg_image.jpg");
-    background-repeat: no-repeat;
-    background-size: 384%;
-    background-position: 61% 45%;
+    @include set-background(384%, 61%, 45%);
+  }
+  @include respond-to(tablet) {
+    @include set-background(193%, 66%, 36%);
   }
 }

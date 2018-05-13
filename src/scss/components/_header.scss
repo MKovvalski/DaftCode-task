@@ -3,25 +3,21 @@
 .main-header {
   width: 100%;
   padding-left: 5.5%;
-  padding-right: 5.55%;
-  margin-top: 1.7%;
+  padding-right: 5.79%;
+  margin-top: 2.5vh;
   @include flex-box(row, space-between, center);
 }
 
 .header {
-  margin-top: 2.4%;
-  width: 16.5%;
+  margin-top: 3.45vh;
+  width: 14.7vw;
   object-fit: cover;
 }
 
-.main-nav{
-  width: 43.1%;
-}
-
 .nav-list {
+  margin-top: 0.3vh;
   text-transform: uppercase;
   font-family: $Open-sans-regular;
-  @include flex-box(row, flex-start, center);
 }
 
 .nav-list-icons {
@@ -29,13 +25,13 @@
 }
 
 .nav-element {
-  margin-right: 9%;
+  margin-right: 3.38vw;
   position: relative;
   &:after {
     position: absolute;
     content: "";
     width: 0;
-    height: 3px;
+    height: 0.4vh;
     background-color: $color-third;
     top: 99%;
     left:0;
@@ -49,7 +45,7 @@
 }
 
 .nav-link {
-  font-size: 1.25vw;
+  font-size: 1.12vw;
   color: $color-third;
   font-weight: 600;
   text-decoration: none;
@@ -57,13 +53,14 @@
 
 .contact-button {
   font-family: $Open-sans-regular;
-  width: 172%;
-  height: 3.6vw;
-  font-size: 1.25vw;
+  width: 10.3vw;
+  height: 5vh;
+  font-size: 1.11vw;
   font-weight: 600;
-  padding-left: 0;
-  margin-left: 5.7%;
-  margin-top: 5%;
+  padding-top: 2%;
+  padding-left: 1%;
+  margin-left: 3.7%;
+  margin-top: 0.3vh;
   color: $color-third;
   text-transform: uppercase;
   border: 3px solid $color-third;

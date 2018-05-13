@@ -5,6 +5,10 @@
     margin-top: 3.6vh;
     width: 69vw;
   }
+  @include respond-to(tablet) {
+    margin-top: 7.98vh;
+    width: 51vw;
+  }
 }
 
 .content-main-text {
@@ -14,6 +18,10 @@
     font-size: 5.8vw;
     line-height: 4.5vh;
     letter-spacing: 0.1px;
+  }
+  @include respond-to(tablet) {
+    font-size: 2.75vw;
+    letter-spacing: 0.008vw;
   }
 }
 
@@ -36,6 +44,11 @@
     margin-top: 4.2vh;
     margin-bottom: 0;
   }
+  @include respond-to(tablet) {
+    width: 7.8vw;
+    height: 7.8vw;
+    margin-top: 13.7vh;
+  }
 }
 
 .content-main-sub-text {
@@ -45,12 +58,23 @@
     margin-top: 4vh;
     letter-spacing: -0.04vw;
   }
+  @include respond-to(tablet) {
+    margin-left: -0.4vw;
+    margin-top: 14.8vh;
+    font-size: 1.4vw;
+    letter-spacing: -0.004vw;
+  }
 }
 
 .contact-list {
   @include respond-to(mobile) {
     margin-top: 5.6vh;
     @include flex-box(column, center, space-between);
+  }
+  @include respond-to(tablet) {
+    width: 78.8%;
+    margin-top: 3.4vh;
+    margin-right: 0.3vw;
   }
 }
 
@@ -73,6 +97,11 @@
     width: 5vw;
     height: 5vw;
   }
+  @include respond-to(tablet) {
+    width: 1.65vw;
+    height:1.65vw;
+    margin-top: 0;
+  }
 }
 
 .contact-element-icon-google {
@@ -82,11 +111,21 @@
     margin-top: 0;
     margin-right: 0.4vw;
   }
+  @include respond-to(tablet) {
+    width: 2.4vw;
+    height: 2.4vw;
+    margin: 0;
+  }
 }
 
 .contact-element-text {
   @include respond-to(mobile) {
     font-size: 3.8vw;
     margin-left: 4vw;
+  }
+  @include respond-to(tablet) {
+    font-size: 1.15vw;
+    margin-left: 1.1vw;
+    letter-spacing: 0.013vw;
   }
 }

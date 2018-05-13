@@ -6,11 +6,19 @@
     top: 96.6%;
     border-radius: 0.8vw;
   }
+  @include respond-to(tablet) {
+    width: 8vw;
+  }
 }
 
 .bottom-nav-link-text {
   @include respond-to(mobile) {
     display: none;
+  }
+  @include respond-to(tablet) {
+    font-size: 1.05vw;
+    top: 20%;
+    right: 55%;
   }
 }
 

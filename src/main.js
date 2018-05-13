@@ -20,21 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const mobileNav = document.querySelector(".main-nav");
   const burgerButton = document.querySelector(".burger-button");
-  const burgerButtonImg = document.querySelector(".burger-button-img");
+  const burgerImg = document.querySelector(".burger-img");
+  const xImg = document.querySelector(".x-img");
 
   burgerButton.addEventListener("click", function () {
     if (mobileNav.classList.contains("slide-down")) {
+      // hide mobile-menu
       mobileNav.classList.remove("slide-down");
       mobileNav.classList.add("slide-up");
       setTimeout(() => {
-        burgerButtonImg.src = "./images/svg-files/hamburger_menu.svg";
-        burgerButtonImg.style.width = "9vw"
+        // transition x icon to burger icon
+        xImg.classList.remove("x-img-opacity");
+        burgerImg.classList.remove("burger-img-opacity");
       },200);
     } else {
+      // show mobile-menu
       mobileNav.classList.remove("slide-up");
       mobileNav.classList.add("slide-down");
-      burgerButtonImg.src = "./images/svg-files/iks.svg";
-      burgerButtonImg.style.width = "7vw"
+      // transition burger icon to x icon
+      burgerImg.classList.add("burger-img-opacity");
+      xImg.classList.add("x-img-opacity");
     }
   })
 
