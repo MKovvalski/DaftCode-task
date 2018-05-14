@@ -104,7 +104,7 @@
     border: 1vw solid $color-third;
     &:hover {
       background-color: transparent;
-      color: $color-first;
+      color: $color-third;
     }
   }
   @include respond-to(tablet) {
