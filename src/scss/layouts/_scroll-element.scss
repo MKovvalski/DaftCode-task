@@ -3,11 +3,12 @@
 .bottom-nav-link {
   @include respond-to(mobile) {
     width: 17vw;
-    top: 96.6%;
+    bottom: -9vw;
     border-radius: 0.8vw;
   }
   @include respond-to(tablet) {
     width: 8vw;
+    bottom: -4.2vw;
   }
 }
 
@@ -26,8 +27,8 @@
   @include respond-to(mobile) {
     display: block;
     z-index: 1;
-    top: 5%;
-    right: 71%;
+    top: 6.5%;
+    right: 69%;
     font-size: 4.5vw;
   }
 }
