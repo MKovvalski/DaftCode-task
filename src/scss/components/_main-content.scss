@@ -77,9 +77,12 @@
   margin-right: 0.24vw;
 }
 
+// class for animation
+
 .rotate {
   animation: rotate 0.5s linear 1 forwards;
 }
+// animation
 
 @keyframes rotate {
   100% {

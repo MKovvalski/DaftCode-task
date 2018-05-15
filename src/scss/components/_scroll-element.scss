@@ -3,6 +3,7 @@
 .bottom-nav-link {
   z-index: 1;
   width: 6.9vw;
+  height: 6.9vw;
   background-color: $color-third;
   position: absolute;
   border-radius: 6%;
@@ -10,11 +11,6 @@
   border: none;
   transform: rotate(45deg);
   font-family: $Open-sans-regular;
-  &:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-  }
 }
 
 .bottom-nav-link-text {

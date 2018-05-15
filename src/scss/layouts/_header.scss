@@ -145,26 +145,34 @@
 }
 
 .burger-img {
-  left: 0;
-  position: absolute;
-  transition: $transition;
-  opacity: 1;
+  @include respond-to(mobile) {
+    left: 0;
+    position: absolute;
+    transition: $transition;
+    opacity: 1;
+  }
 }
 
 .x-img {
-  width: 6.8vw;
-  left: 1vw;
-  position: absolute;
-  transition: $transition;
-  opacity: 0;
+  @include respond-to(mobile) {
+    width: 6.8vw;
+    left: 1vw;
+    position: absolute;
+    transition: $transition;
+    opacity: 0;
+  }
 }
 
 .x-img-opacity {
-  opacity: 1;
+  @include respond-to(mobile) {
+    opacity: 1;
+  }
 }
 
 .burger-img-opacity {
-  opacity: 0;
+  @include respond-to(mobile) {
+    opacity: 0;
+  }
 }
 // classes for animations
 

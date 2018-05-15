@@ -9,7 +9,7 @@
   align-items: $align;
 }
 
-// background image properties
+// background-image properties
 
 @mixin set-background ($bg-size, $bg-position-x, $bg-position-y) {
   background:   linear-gradient(
@@ -21,7 +21,7 @@
   background-position: $bg-position-x $bg-position-y;
 }
 
-// media queries mixin - credit to http://thesassway.com/intermediate/responsive-web-design-part-2;
+// media queries properties
 
 @mixin respond-to($media) {
   @if $media == mobile {

@@ -3,11 +3,13 @@
 .bottom-nav-link {
   @include respond-to(mobile) {
     width: 17vw;
+    height: 17vw;
     bottom: -9vw;
     border-radius: 0.8vw;
   }
   @include respond-to(tablet) {
     width: 8vw;
+    height: 8vw;
     bottom: -4.2vw;
   }
 }
