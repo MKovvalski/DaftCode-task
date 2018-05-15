@@ -97,7 +97,9 @@
     border: 0.6vh solid $color-third;
     &:hover {
       background-color: transparent;
-      color: $color-third;
+      .nav-link-last {
+        color: $color-third;
+      }
     }
   }
   @include respond-to(tablet) {
@@ -107,10 +109,6 @@
     margin-top: 0;
     line-height: 3.4vh;
     margin-right: 0;
-  }
-  &:hover {
-    background-color: $color-third;
-    color: $color-second;
   }
 }
 

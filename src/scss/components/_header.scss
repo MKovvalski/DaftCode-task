@@ -69,7 +69,9 @@
   margin-top: 0.3vh;
   &:hover {
     background-color: $color-third;
-    color: $color-second;
+    .nav-link-last {
+      color: $color-second;
+    }
   }
 }
 
