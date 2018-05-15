@@ -203,9 +203,6 @@ input[type=button] {
 /*stylelint-disable*/
 /*stylelint-disable*/
 .container {
-  width: 1440px;
-  height: 900px;
-  background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
