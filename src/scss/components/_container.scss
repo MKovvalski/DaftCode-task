@@ -3,6 +3,7 @@
 .container {
   width: 100vw;
   height: 100vh;
+  min-height: 900px;
   @include set-background(182%, 68%, 35%);
   @include flex-box(column, flex-start, center);
   overflow: hidden;

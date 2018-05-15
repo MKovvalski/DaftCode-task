@@ -2,9 +2,11 @@
 
 .container {
   @include respond-to(mobile) {
+    min-height: 530px;
     @include set-background(384%, 61%, 45%);
   }
   @include respond-to(tablet) {
+    min-height: 768px;
     @include set-background(193%, 66%, 36%);
   }
 }
