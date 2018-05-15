@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // hide mobile-menu
       mobileNav.classList.remove("slide-down");
       mobileNav.classList.add("slide-up");
+      burgerButton.setAttribute("aria-expanded", "false");
       setTimeout(() => {
         // transition x icon to burger icon
         xImg.classList.remove("x-img-opacity");
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // show mobile-menu
       mobileNav.classList.remove("slide-up");
       mobileNav.classList.add("slide-down");
+      burgerButton.setAttribute("aria-expanded", "true");
       // transition burger icon to x icon
       burgerImg.classList.add("burger-img-opacity");
       xImg.classList.add("x-img-opacity");

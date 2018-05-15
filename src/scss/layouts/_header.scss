@@ -89,30 +89,20 @@
   }
 }
 
-.contact-button {
+.nav-element-last {
   @include respond-to(mobile) {
-    width: 63vw;
-    height: 7.7vh;
-    font-size: 5vw;
-    line-height: 4.8vw;
-    margin-top: 1.4vh;
-    margin-left: 0;
-    padding: 0;
-    border: 1vw solid $color-third;
-    &:hover {
-      background-color: transparent;
-      color: $color-third;
-    }
+    width: 60vw;
+    padding: 3.5vh;
+    line-height: 0;
+    border: 0.6vh solid $color-third;
   }
   @include respond-to(tablet) {
-    height: 4.6vh;
     width: 11.3vw;
+    height: 4.5vh;
+    min-height: 33px;
     margin-top: 0;
-    margin-left: 0.1vw;
-    font-size: 1.15vw;
-    padding-top: 0;
-    padding-left: 0.35vw;
-    min-height: 38px;
+    line-height: 3.4vh;
+    margin-right: 0;
   }
 }
 
@@ -135,9 +125,6 @@
     padding: 0;
     background-color: transparent;
     border: none;
-    &:focus {
-      outline: none;
-    }
   }
 }
 
@@ -152,16 +139,24 @@
 
 .x-img {
   @include respond-to(mobile) {
+    display: none;
     width: 6.8vw;
     left: 1vw;
     position: absolute;
     transition: $transition;
     opacity: 0;
   }
+  @include respond-to(desktop) {
+    display: none;
+  }
+  @include respond-to(tablet) {
+    display: none;
+  }
 }
 
 .x-img-opacity {
   @include respond-to(mobile) {
+    display: block;
     opacity: 1;
   }
 }
